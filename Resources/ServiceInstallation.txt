@@ -1,0 +1,14 @@
+﻿
+.NET Framework
+1.) Copy files from bin\Release to any directory on the target machine ({folderPath})
+2.) Open CMD as admin
+3.) Run Command 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\InstallUtil.exe "{folderPath}\{ServiceName}.exe"'
+4.) Open Services and confirm service was installed and properties are correct
+
+.Net Core
+1.) Copy files from bin\Release to any directory on the target machine ({folderPath})
+2.) Open CMD as admin
+3.) Run Command 'sc create "[NLC] {ServiceName}" BinPath= "{folderPath}\{ServiceName}.exe"'
+4.) Open Services and confirm service was installed and properties are correct
+
+TO REMOVE: sc delete "[NLC] {ServiceName}"

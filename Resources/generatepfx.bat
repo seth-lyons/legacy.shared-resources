@@ -1,0 +1,1 @@
+openssl pkcs12 -export -out certificate.pfx -inkey key.pem -in certificate.crt -certfile gd_bundle-g2-g1.crt
